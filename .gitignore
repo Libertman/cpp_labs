@@ -1,19 +1,13 @@
-.vs/
-Debug/
-Release/
-x64/
-x86/
-*.user
-*.suo
-*.sdf
-*.opensdf
-*.opendb
-
-# Скомпилированные файлы
+# Скомпилированные файлы и библиотеки
 *.obj
+*.o
 *.exe
 *.dll
+*.dylib
+*.so
+*.so.*
 *.lib
+*.a
 *.pdb
 
 # Файлы отладки
@@ -26,14 +20,42 @@ x86/
 ipch/
 *.tlog
 
-# Файлы резервных копий
+# Файлы резервных копий и временные файлы
 *.bak
 *.tmp
 *~
+.DS_Store
+Thumbs.db
 
 # Папка с результатами сборки
 out/
 build/
+build*/
+cmake-build-*/
+bin/
 
-# Файлы VS Code
+# CMake сгенерированные файлы
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+*.ninja
+.ninja_*
+compile_commands.json
+
+# IDE и редакторы
 .vscode/
+.idea/
+.vs/
+*.user
+*.suo
+*.sdf
+*.opensdf
+*.opendb
+.cache/
+.clangd/
+Debug/
+Release/
+x64/
+x86/
